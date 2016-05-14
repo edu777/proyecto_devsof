@@ -18,7 +18,8 @@ $(document).ready(function(){
 </head>
 <body>
 
-<center><p><img src="imagen/sd.png" alt="sd" /></p></center>
+<center><p><img src="sd.png" alt="sd" /></p></center>
+<!-- <center><p><img src="imagen/sd.png" alt="sd" /></p></center> -->
 
 <button id="hide">Oculatar</button>
 <button id="show">Mostrar</button>
