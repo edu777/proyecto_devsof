@@ -1,0 +1,141 @@
+
+//////////// val()
+</pre>
+<tr>
+<td width="50%" nowrap="nowrap" align="right">Estudios <span class="campo_obligatorio">*</span></td></td>
+<td nowrap="nowrap">
+<select name="estudio" id="estudio">
+<option value="-2">- Seleccione -</option>
+<option value="0">Hola</option>
+<option value="2">Adios</option>
+ 
+</select>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<input id="seleccionado" type="text" readonly="readonly" />
+<input id="valor" type="text" readonly="readonly" />
+</td>
+</tr>
+<script>
+$('#estudio').change(function(){
+$('#seleccionado').val($('#estudio option:selected').text());
+$('#valor').val($('#estudio option:selected').val());
+});
+</script>
+<pre>
+/////// empty
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>appletenhtml get jquery</title>
+    <script src="jquery-1.11.2.js"></script>
+ 
+</head>
+<body>
+
+<article>
+
+
+<section>
+<h1>Imagen:</h1>
+<img src="img.png" alt="" id="imagen" />
+
+<button id="boton1">Remover</button>
+
+</section>
+
+
+<section>
+
+<div id="dv">
+ <table>tabla
+  <ul>
+   <li>1</li>
+   <li>2</li>
+   <li>3</li>
+  </ul>
+ </table>
+ <aside>aside
+  <div>div
+   <footer><a href="">txt 01 </a>|<a href="">txt 02</a>|
+           <a href="">txt 03 </a>|<a href="">txt 04</a>
+           <a href="">txt 05 </a>
+   </footer>
+  </div>
+ </aside>
+</div>
+
+<button id="boton2">Vaciar</button>
+</section>
+
+</article>
+
+<script>
+$(document).ready(function(){
+  
+  $("#boton1").click(function(){
+   //removiendo imagen
+  $("#imagen").remove();
+  });
+  $("#boton2").click(function(){
+    //vaciando dv
+    $("#dv").empty();
+  });
+  
+});
+    
+</script>
+</body>
+</html>
+/// addclass
+
+<!-- By http://jquery-manual.blogspot.com -->
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
+<style type="text/css">
+.selected {color:white; }
+.fondo { background-color: blue;}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+$(":button#boton").toggle(function(){
+$("#caja").addClass('selected fondo')}
+,function() {
+$("#caja").removeClass('selected fondo');
+});
+});
+</script>
+</head>
+<body>
+<input type="button" id="boton" value="addClass y removeClass">
+<div id="caja">
+Usando las funciones addClass() y removeClass()</div>
+</body>
+</html>
+///// attr
+<html>
+<head>
+   <title>método attr</title>
+   <script src="../jquery-1.3.2.min.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+   
+   $("a").each(function(i){
+      var titulo = $(this).attr("title");
+      alert("Atributo title del enlace " + i + ": " + titulo);
+   });
+   
+});
+</script>
+</head>
+
+<body>
+<a id="enlace1" href="http://www.elpais.com" title="Diario El País">El País</a>
+<br>
+<a href="http://www.mozilla.org" title="Fundación Mozilla">Mozilla Fundation</a>
+<br>
+<a href="http://es.openoffice.org/" title="Siute de programas de oficina">Open Office</a>
+</body>
+</html>
