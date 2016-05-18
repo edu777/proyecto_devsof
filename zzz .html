@@ -1,0 +1,27 @@
+ <html>
+    <head>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // Inicializo controlador del div con id=jeje
+                $("#jeje").click(function(){
+                    $.ajax({
+                    url: 'callback.php',
+                    success: function(data) {
+                        $('#botones').html(data);
+                        //alert('Load was performed. Data = '+data+'.');
+                    }
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="jeje" style="background-color: #ff0000; width: 150px; height: 150px; border:1px solid;">
+            Haz click por aqui dentro...
+        </div>
+        <div id="botones">
+            Al hacer click arriba en esta zona aparecerán los botones
+      </div>       
+    </body>
+</html>
