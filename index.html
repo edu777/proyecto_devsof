@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Act1</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial -scale=1.0">
+		<script src="assets/js/jquery/jquery.js"></script>
+		<script srt="assets/js/main.js"></script>
+		<link rel="stylesheet" href="assets/css/main.css">
+	</head>
+	<body>
+		<div>Tabla Productos</div>
+		<thead>
+			<tr>
+				<th>Producto</th>
+				<th>Cantidad</th>
+				<th>Pecio</th>
+				<th>Total</th>
+				<th>Acciones</th>
+			</tr>
+		</thead>
+	<tbody>
+		<tr>
+			<td><input class="c_nombre" type="text" value="Coca cola 2L"/></td>
+			<td><input class="c_cantidad" type="number" value="2" onchange="calculartotal"/></td>
+			<td><input class="c_precio" type="number" value="6.5"/></td>
+			<td><input class="c_total" type="number" value="13" readonly/></td>
+			<td><a href="#" onclick="copiarFila(this)">Copiar</a></td>
+		</tr>
+	</tbody>
+	</table>
+	</body>
+	</html>
