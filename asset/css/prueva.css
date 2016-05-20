@@ -1,0 +1,7 @@
+
+#tabla{	border: solid 1px #333;	width: 300px; }
+#tabla tbody tr{ background: #999; }
+.fila-base{ display: none; } /* fila base oculta */
+.eliminar{ cursor: pointer; color: #000; }
+input[type="text"]{ width: 80px; } /* ancho a los elementos input="text" */
+ 
