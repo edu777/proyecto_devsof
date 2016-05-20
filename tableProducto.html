@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  
+	<title>Act1</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial -scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="asset/js/jquery/jquery.js"></script>
+		<script src="asset/js/prueva.js"></script>
+		<link rel="stylesheet" href="css/prueva.css">
+	</head>
+
+	<body>
+              <table id="tabla">
+            <thead>
+           
+
+		<tr>
+			<th>Producto</th>
+			<th>Cantidad</th>
+			<th>Precio</th>
+                        <th>Total</th>
+			<th>&nbsp;</th>
+		</tr>
+                
+	</thead>
+        <tbody>
+		<!-- fila base para clonar y agregar al final -->
+		<tr class="fila-base">
+			<td><input type="text" class="producto" /></td>
+			<td><input type="text" class="cantidad" /></td>
+                        <td><input type="text" class="precio" /></td>
+                        <td><input type="text" class="total" /></td>
+			<!--<td>
+				<select class="sexo">
+					<option value="0">- Sexo -</option>
+					<option value="M">Masculino</option>
+					<option value="F">Femenino</option>
+				</select>
+			</td>
+                        -->
+			<td class="eliminar">Eliminar</td>
+		</tr>
+		<!-- fin de código: fila base -->
+ 
+		<!-- Fila de ejemplo -->
+		<tr>
+			<td><input type="text" class="producto" /></td>
+			<td><input type="text" class="cantidad" /></td>
+                        <td><input type="text" class="precio" /></td>
+                        <td><input type="text" class="total" /></td>
+			<!--<td>
+				<select class="sexo">
+					<option value="0">- Sexo -</option>
+					<option value="M">Producto</option>
+					<option value="F">Cantidad</option>
+				</select>
+			</td>-->
+			<td class="eliminar">Eliminar</td>
+		</tr>
+		<!-- fin de código: fila de ejemplo -->
+                </tbody>
+	</table>
+<input type="button" id="agregar" value="Agregar fila" />
+	</body>
+<!-- Botón para agregar filas -->
+
+</html>
