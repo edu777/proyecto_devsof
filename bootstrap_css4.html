@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Bootstrap 3 Affix</title>
+<link rel="stylesheet" href="asset/js/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="asset/js/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="asset/js/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<style type="text/css">
+    /* Custom Styles */
+    ul.nav-tabs{
+        width: 140px;
+        margin-top: 20px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+    }
+    ul.nav-tabs li{
+        margin: 0;
+        border-top: 1px solid #ddd;
+    }
+    ul.nav-tabs li:first-child{
+        border-top: none;
+    }
+    ul.nav-tabs li a{
+        margin: 0;
+        padding: 8px 16px;
+        border-radius: 0;
+    }
+    ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover{
+        color: #fff;
+        background: #0088cc;
+        border: 1px solid #0088cc;
+    }
+    ul.nav-tabs li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+    ul.nav-tabs li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+    ul.nav-tabs.affix{
+        top: 30px; /* Set the top position of pinned element */
+    }
+</style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy">
+<div class="container">
+	<div class="jumbotron">
+        <h1>Bootstrap Affix</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-3" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="195">
+                <li class="active"><a href="#section-1">Seccion Uno</a></li>
+                <li><a href="#section-2">Seccion Dos</a></li>
+                <li><a href="#section-3">Seccion Tres</a></li>
+                <li><a href="#section-4">Seccion Cuatro</a></li>
+                <li><a href="#section-5">Seccion Cinco</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <h2 id="section-1">Seccion Uno</h2>
+            <p>Cepillo de dientes con videojuegos</p>
+            <p>Como si fuera un mando de videojuegos. Así es el cepillo de dientes que la compañía Kolibree presentó para que los pequeños realicen su limpieza dental mientras se divierten.</p>
+            <hr>
+            <h2 id="section-2">Seccion Dos</h2>
+            <p> Zapatos que se amarran solos</p>
+            <p>La firma Digisole presentó unos zapatos inteligentes que se pueden controlar por medio de una aplicación móvil.
+El usuario puede ordenar que se amarren solos y que se calienten, para periodos invernales. Además, los zapatos miden cuántas calorías ha consumido el usuario.</p>
+            <hr>
+            <h2 id="section-3">Seccion Tres</h2>
+            <p>Un televisor ultradelgado</p>
+            <p>La compañía LG dio a conocer una nueva línea de productos llamada LG Signature, que incluye un televisor Oled de 2,57 mm de grosor. El TV promete una buena capacidad de respuesta gracias a su panel de 10 bit.
+El objetivo de LG con este prototipo fue eliminar los elementos innecesarios./p>
+            
+            <hr>
+            <h2 id="section-4">Seccion Cuatro</h2>
+            <p>El casco anticalvicie</p>
+            <p>La Hairmax LaserBand 82, diseñada por la firma Pinin Farina, promete estimular el crecimiento del cabello por medio de sesiones de 90 minutos de luz láser. En teoría, este dispositivo estimula el cuero cabelludo y los folículos. Su valor es de 800 dólares (unos 2'600.000 pesos).</p>
+            <hr>
+            <h2 id="section-5">Seccion Cinco</h2>
+            <p>Reloj que despierta con olores</p>
+            <p>Vivamus mattis accumsan erat, vel convallis risus pretium nec. Integer nunc nulla, viverra ut sem non, scelerisque vehicula arcu. Fusce bibendum convallis augue sit amet lobortis. Cras porta urna turpis, sodales lobortis purus adipiscing id. Maecenas ullamcorper, turpis suscipit pellentesque fringilla, massa lacus pulvinar mi, nec dignissim velit arcu eget purus. Nam at dapibus tellus, eget euismod nisl. Ut eget venenatis sapien. Vivamus vulputate varius mauris, vel varius nisl facilisis ac. Nulla aliquet justo a nibh ornare, eu congue neque rutrum.</p>
+            <p>Suspendisse a orci facilisis, dignissim tortor vitae, ultrices mi. Vestibulum a iaculis lacus. Phasellus vitae convallis ligula, nec volutpat tellus. Vivamus scelerisque mollis nisl, nec vehicula elit egestas a. Sed luctus metus id mi gravida, faucibus convallis neque pretium. Maecenas quis sapien ut leo fringilla tempor vitae sit amet leo. Donec imperdiet tempus placerat. Pellentesque pulvinar ultrices nunc sed ultrices. Morbi vel mi pretium, fermentum lacus et, viverra tellus. Phasellus sodales libero nec dui convallis, sit amet fermentum sapien auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eu elementum nibh, quis varius libero.</p>
+            <p>Morbi sed fermentum ipsum. Morbi a orci vulputate tortor ornare blandit a quis orci. Donec aliquam sodales gravida. In ut ullamcorper nisi, ac pretium velit. Vestibulum vitae lectus volutpat, consequat lorem sit amet, pulvinar tellus. In tincidunt vel leo eget pulvinar. Curabitur a eros non lacus malesuada aliquam. Praesent et tempus odio. Integer a quam nunc. In hac habitasse platea dictumst. Aliquam porta nibh nulla, et mattis turpis placerat eget. Pellentesque dui diam, pellentesque vel gravida id, accumsan eu magna. Sed a semper arcu, ut dignissim leo.</p>
+            <p>Sed vitae lobortis diam, id molestie magna. Aliquam consequat ipsum quis est dictum ultrices. Aenean nibh velit, fringilla in diam id, blandit hendrerit lacus. Donec vehicula rutrum tellus eget fermentum. Pellentesque ac erat et arcu ornare tincidunt. Aliquam erat volutpat. Vivamus lobortis urna quis gravida semper. In condimentum, est a faucibus luctus, mi dolor cursus mi, id vehicula arcu risus a nibh. Pellentesque blandit sapien lacus, vel vehicula nunc feugiat sit amet.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>                                		

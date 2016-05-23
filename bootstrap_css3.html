@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Placing HTML inside Bootstrap 3 Tooltips</title>
+<link rel="stylesheet" href="asset/js/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="asset/js/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="asset/js/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#myTooltips a").tooltip({
+        template : '<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-head"><h3><span class="glyphicon glyphicon-info-sign"></span> Tool Info</h3></div><div class="tooltip-inner"></div></div>'
+    });
+});
+</script>
+<style type="text/css">
+	.bs-example{
+    	margin: 200px 100px;
+    }
+    .bs-example a{
+        margin: 25px;
+        font-size: 20px;
+    }
+    /* Styles for custom tooltip template */
+    .tooltip-head{
+        color: #fff;
+        background: #000;
+        padding: 10px 10px 5px;
+        border-radius: 4px 4px 0 0;
+        text-align: center;
+        margin-bottom: -2px; /* Hide default tooltip rounded corner from top */
+    }
+    .tooltip-head .glyphicon{
+        font-size: 22px;
+        vertical-align: bottom;
+    }
+    .tooltip-head h3{
+        margin: 0;
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+<div class="bs-example">
+    <div id="myTooltips">
+        <a href="#" data-toggle="tooltip" title="Abrir este documento para la edición en un editor de texto."><span class="glyphicon glyphicon-edit"></span></a>
+        <a href="#" data-toggle="tooltip" title="Guarde este documento en el servidor web remoto de forma permanente ."><span class="glyphicon glyphicon-floppy-disk"></span></a>
+        <a href="#" data-toggle="tooltip" title="Descargar este documento desde el servidor remoto ."><span class="glyphicon glyphicon-download-alt"></span></a>
+        <a href="#" data-toggle="tooltip" title="Imprimir este documento usando una impresora instalada en su máquina ."><span class="glyphicon glyphicon-print"></span></a>
+        <a href="#" data-toggle="tooltip" title="Eliminar este documento de forma permanente ."><span class="glyphicon glyphicon-trash"></span></a>
+        <a href="#" data-toggle="tooltip" title="Configuración del documento"><span class="glyphicon glyphicon-cog"></span></a>
+    </div>    
+</div>
+</body>
+</html>                                		                                		
