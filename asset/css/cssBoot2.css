@@ -1,0 +1,25 @@
+    /* Styles de ejercicio 3 (iconos)*/
+	.bs-example{
+    	margin: 20px 10px;
+    }
+    .bs-example a{
+        margin: 25px;
+        font-size: 20px;
+    }
+    /* Styles for custom tooltip template */
+    .tooltip-head{
+        color: #fff;
+        background: #000;
+        padding: 10px 10px 5px;
+        border-radius: 4px 4px 0 0;
+        text-align: center;
+        margin-bottom: -2px; /* Hide default tooltip rounded corner from top */
+    }
+    .tooltip-head .glyphicon{
+        font-size: 22px;
+        vertical-align: bottom;
+    }
+    .tooltip-head h3{
+        margin: 0;
+        font-size: 18px;
+    }
